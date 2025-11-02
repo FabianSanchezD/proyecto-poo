@@ -107,6 +107,26 @@ public class Estudiante {
         this.organizacion = organizacion;
         this.intereses = new ArrayList<>(intereses);
         this.fechaRegistro = LocalDate.now(); // fecha actual para el registro
-    
+
+    }
+
+    public void consultarInfo() {
+        System.out.println("    INFORMACION DEL ESTUDIANTE");
+        System.out.println("ID: " + this.id);
+        System.out.println("Nombre completo: " + this.nombre + " " + this.apellido1 + " " + this.apellido2);
+        System.out.println("Correo: " + this.correo);
+        System.out.println("Telefono: " + this.telefono);
+        System.out.println("Direccion: " + this.direccion);
+        if (this.organizacion != null) {
+            System.out.println("Organizacion: " + this.organizacion);
+        }
+        System.out.println("Fecha de registro: " + this.fechaRegistro);
+
+        if (this.intereses != null && !this.intereses.isEmpty()) {
+            System.out.println("\nTemas de interes:");
+            for (int i = 0; i < this.intereses.size(); i++) {
+                System.out.println(this.intereses.get(i));
+            }
+        }
     }
 }
