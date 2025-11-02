@@ -91,23 +91,22 @@ public class Estudiante {
             }
         }
 
-        // Validar contraseña (no nula)
+        // contrasena no vacia
+        // TODO: implementar logica de encriptacion de contra, validaciones extra
         if (contrasena == null || contrasena.trim().isEmpty()) {
             throw new IllegalArgumentException("La contraseña no puede estar vacía");
         }
 
-        // Asignar valores
-        this.id = id.trim();
-        this.nombre = nombre.trim();
-        this.apellido1 = apellido1.trim();
-        this.apellido2 = apellido2.trim();
-        this.correo = correo.trim();
+        this.id = id;
+        this.nombre = nombre;
+        this.apellido1 = apellido1;
+        this.apellido2 = apellido2;
+        this.correo = correo;
         this.contrasena = contrasena;
-        this.telefono = telefono.trim();
-        this.direccion = direccion.trim();
-        this.organizacion = (organizacion != null) ? organizacion.trim() : null;
-        this.intereses = (intereses != null) ? new ArrayList<>(intereses) : new ArrayList<>();
-        this.fechaRegistro = LocalDate.now(); // Asignar automáticamente la fecha actual
-    }
+        this.telefono = telefono;
+        this.direccion = direccion;
+        this.organizacion = organizacion;
+        this.intereses = new ArrayList<String>(intereses);
+        this.fechaRegistro = LocalDate.now(); // fecha actual para el registro
     
 }
