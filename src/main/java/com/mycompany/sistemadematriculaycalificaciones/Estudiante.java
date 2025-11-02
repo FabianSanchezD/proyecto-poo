@@ -1,7 +1,6 @@
 package com.mycompany.sistemadematriculaycalificaciones;
 
 import java.time.LocalDate;
-import java.util.List;
 import java.util.ArrayList;
 
 /**
@@ -106,7 +105,8 @@ public class Estudiante {
         this.telefono = telefono;
         this.direccion = direccion;
         this.organizacion = organizacion;
-        this.intereses = new ArrayList<String>(intereses);
+        this.intereses = new ArrayList<>(intereses);
         this.fechaRegistro = LocalDate.now(); // fecha actual para el registro
     
+    }
 }
