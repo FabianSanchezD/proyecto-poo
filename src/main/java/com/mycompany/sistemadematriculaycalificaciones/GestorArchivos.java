@@ -6,7 +6,7 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 /**
- * Clase para gestionar el guardado de datos en archivos
+ * Clase para gestionar archivos
  * @author fabiansanchezd
  */
 public class GestorArchivos {
