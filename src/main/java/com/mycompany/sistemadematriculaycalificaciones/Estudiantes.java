@@ -5,8 +5,7 @@
 package com.mycompany.sistemadematriculaycalificaciones;
 import java.util.Date;//para poder incluir la fecha
 import java.util.List;
-import java.util.ArrayList;//modulos de manejo de fechas
-import java.util.regex.Pattern;
+import java.util.ArrayList;
 import java.io.*;
 import java.security.MessageDigest;
 /**
